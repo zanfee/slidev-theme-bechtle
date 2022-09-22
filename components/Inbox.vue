@@ -3,7 +3,7 @@ import { useInbox } from '../composibles/inbox';
 
 const { emails, addEmail } = useInbox();
 
-const props = defineProps({
+defineProps({
   name: {
     type: String,
     required: true,
@@ -12,7 +12,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="border-2 min-h-[17rem]" :class="{ 'border-b-0': emails.length > 2 }">
+  <div class="inbox border-2 min-h-[17rem]">
     <div class="flex gap-2 items-center px-4 py-4 bg-bechtle-hellgrau border-b-2 font-semibold">
       <button class="i-fa6-solid-rotate text-bechtle-zukunftsblau" @click="addEmail" />
       {{ name }}
@@ -22,3 +22,9 @@ const props = defineProps({
     </template>
   </div>
 </template>
+
+<style scoped>
+.inbox > div:last-child {
+  @apply border-b-0!;
+}
+</style>
