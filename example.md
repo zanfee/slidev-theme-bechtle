@@ -1,7 +1,8 @@
 ---
 theme: ./
 layout: cover
-class: border-15
+title: Entwicklung einer Lösung zum Monitoring von AFI Invoice
+css: unocss
 ---
 
 # Entwicklung einer Lösung zum Monitoring von AFI Invoice
@@ -10,13 +11,49 @@ Eine Projektarbeit von Jan Fröhlich
 
 Neckarsulm | 26.09.2022 | Bechtle AG
 
+<!--
+- Name, Firma
+- Projektarbeit Titel 
+"Evaluation und prototypische Implementierung einer Lösung zum Monitoring der automatischen Rechnungsverarbeitung mittels AFI Invoice"
+- Entwicklung einer Überwachungssoftware
+-->
+
 ---
 
 # Agenda
 
-- Problemstellung
-- Vorgehen
-- Ergebnisse
+<br>
+
+### Problemstellung
+- Was ist AFI Invoice?
+- Probleme mit AFI Invoice
+
+<br>
+
+### Vorgehen
+- Ermittlung der Lösungsstrategien
+- Nutzwertanalyse
+
+<br>
+
+### Ergebnisse
+- Erkenntnisse
+- Produkt
+
+<!--
+Problemstellung
+- Was ist AFI Invoice
+- Welche Probleme gibt es mit AFI Invoice
+
+Vorgehen
+- Finden einer Lösungsstrategie
+- Entwicklung von Prototypen
+- Vergleich der Lösungen mithilfe einer Nutzwertanalyse
+
+Ergebnisse
+- Erkenntnisse der Nutzwertanalyse
+- Vorstellung des Produktes
+-->
 
 ---
 layout: image-right
@@ -35,6 +72,12 @@ flowchart TD
     B[Bechtle] -- Ausgangsrechnungen --> C[Kunden]
 ```
 </div>
+
+<!--
+- Bechtle ist ein IT-Handelsunternehmen
+- Verkauf von Produkten an Kunden
+- senden Rechnungen
+-->
 
 ---
 layout: image-right
@@ -55,6 +98,63 @@ flowchart TD
     B[Bechtle] -- Ausgangsrechnungen --> C[Kunden]
 ```
 </div>
+
+<!--
+- Bechtle bezieht Produkte von Lieferanten
+→ Eingangsrechnungen
+- Projektarbeit thematisiert nur Eingangsrechnungen
+-->
+
+---
+layout: image-right
+image: 'https://inbox-monitor.cfapps.eu20.hana.ondemand.com/'
+---
+
+# Rechnungsverarbeitung
+
+AFI Invoice verarbeitet Eingangsrechnungen
+
+<br>
+
+```mermaid
+%%{init: {'theme':'forest'}}%%
+flowchart TD
+    A[1.800 E-Mails / Tag\nmit PDF-Anhang] --> |gesendet an| B
+    B[32 Exchange Postfächer] --> |verarbeitet von| C[3 AFI Invoice Instanzen\nauf Windows Servern]
+```
+
+---
+layout: two-cols
+---
+# Rechnungsverarbeitung
+
+Funktionsweise von AFI Invoice
+
+<br>
+
+<Inbox name="Posteingang - Bechtle Deutschland" />
+
+::right::
+<div class="w-full h-full pl-12 flex flex-col gap-8">
+  <Invoice />
+  <Sap />
+</div>
+
+---
+layout: iframe
+url: 'https://inbox-monitor.cfapps.eu20.hana.ondemand.com/'
+---
+
+# Rechnungsverarbeitung
+
+Funktionsweise von AFI Invoice
+
+<br>
+<br>
+
+<Inbox>
+
+</Inbox>
 
 ---
 

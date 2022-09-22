@@ -16,7 +16,7 @@ const style = computed(() => handleBackground(props.background, props.dim))
 
 <template>
   <div
-    class="slidev-layout cover"
+    class="slidev-layout cover border-15"
     :style="style"
   >
     <div class="mt-auto mb-42 w-full">

@@ -1,0 +1,24 @@
+<script setup lang="ts">
+import { useInbox } from '../composibles/inbox';
+
+const { emails, addEmail } = useInbox();
+
+const props = defineProps({
+  name: {
+    type: String,
+    required: true,
+  },
+})
+</script>
+
+<template>
+  <div class="border-2 min-h-[17rem]" :class="{ 'border-b-0': emails.length > 2 }">
+    <div class="flex gap-2 items-center px-4 py-4 bg-bechtle-hellgrau border-b-2 font-semibold">
+      <button class="i-fa6-solid-rotate text-bechtle-zukunftsblau" @click="addEmail" />
+      {{ name }}
+    </div>
+    <template v-for="email in emails">
+      <Email :id="email.id" :sender="email.sender" :subject="email.subject" :date="email.date" :message="email.message" :attachments="email.attachments" />
+    </template>
+  </div>
+</template>
