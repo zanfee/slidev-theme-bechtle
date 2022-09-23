@@ -8,7 +8,7 @@ const total = computed(() => inbox.selectedEmail.products ? inbox.selectedEmail.
 
 <template>
   <div v-show="inbox.selectedEmail.id >= 0" class="w-full bg-bechtle-hellgrau border-2 px-4 flex-1">
-    <div py-4 h-10><img :src="'../assets/' + inbox.selectedEmail.sender + '.svg'" alt="" max-h-8 max-w-24 ml-auto></div>
+    <div py-4 h-10><img :src="'../public/assets/' + inbox.selectedEmail.sender + '.svg'" alt="" max-h-8 max-w-24 ml-auto></div>
     <div font-bold>{{ inbox.selectedEmail.subject}}</div>
     <ul>
       <li v-for="[key, val] in inbox.selectedEmail.products">

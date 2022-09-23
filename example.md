@@ -5,8 +5,6 @@ title: Entwicklung einer Lösung zum Monitoring von AFI Invoice
 css: unocss
 ---
 
-<img v-if="false" src="/assets/Vasco-da-Gama-bridge.jpg">
-
 # Entwicklung einer Lösung zum Monitoring von AFI Invoice
 
 Eine Projektarbeit von Jan Fröhlich
@@ -24,8 +22,6 @@ Neckarsulm | 26.09.2022 | Bechtle AG
 layout: image-right-bottom
 image: /assets/Textur_Fliesen_rosa-gelb.jpg
 ---
-
-<img v-if="false" src="/assets/Textur_Fliesen_rosa-gelb.jpg">
 
 # Agenda
 
@@ -67,8 +63,6 @@ layout: image-right
 image: /assets/170531_nhm_bec_3326.jpg
 ---
 
-<img v-if="false" src="/assets/170531_nhm_bec_3326.jpg">
-
 # Rechnungsverarbeitung
 
 Bechtle ist ein IT-Handelsunternehmen
@@ -87,8 +81,6 @@ flowchart TD
 layout: image-right
 image: /assets/170531_nhm_bec_3326.jpg
 ---
-
-<img v-if="false" src="/assets/170531_nhm_bec_3326.jpg">
 
 # Rechnungsverarbeitung
 
@@ -135,8 +127,6 @@ layout: image-right
 image: /assets/170530_nhm_bec_1932.jpg
 ---
 
-<img v-if="false" src="/assets/170530_nhm_bec_1932.jpg">
-
 # Lösungsstrategien
 
 zur Vermeidung eines Zahlungsverzuges
@@ -166,8 +156,6 @@ scale: 0.82
 layout: image-right
 image: /assets/170531_nhm_bec_3609.jpg
 ---
-
-<img v-if="false" src="/assets/170531_nhm_bec_3609.jpg">
 
 # Rechnungsverarbeitung
 

@@ -10,7 +10,7 @@ const totalEuro = computed(() => new Intl.NumberFormat('de-DE', { style: 'curren
 
 <template>
   <div v-show="inbox.selectedEmail.id >= 0" class="w-full bg-#eff4f9 border-2 border-#b1cbe1 flex-1">
-    <div class="flex items-center bg-#b1cbe1 h-8 border-b-2 border-#009de0"><img src="../assets/sap.svg" alt="SAP" h-6 mx-2><div class="text-#009de0 font-bold">{{ inbox.selectedEmail.subject}}</div></div>
+    <div class="flex items-center bg-#b1cbe1 h-8 border-b-2 border-#009de0"><img src="../public/assets/sap.svg" alt="SAP" h-6 mx-2><div class="text-#009de0 font-bold">{{ inbox.selectedEmail.subject}}</div></div>
     <table mx-2 mt-2>
       <thead>
         <tr><th>Bestellung</th><th>Rechnung</th></tr>

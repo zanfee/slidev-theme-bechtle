@@ -39,6 +39,6 @@ defineProps({
         <div class="text-sm i-fa6-solid:clock ml-2" />{{ date.toLocaleString() }}
       </div>
     </div>
-    <img src="../assets/pdf.svg" alt="SVG Icon" h-8 @click.stop="inbox.select(-1); show = false">
+    <img src="../public/assets/pdf.svg" alt="SVG Icon" h-8 @click.stop="inbox.select(-1); show = false">
   </div>
 </template>
