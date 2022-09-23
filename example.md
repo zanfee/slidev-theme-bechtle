@@ -19,6 +19,9 @@ Neckarsulm | 26.09.2022 | Bechtle AG
 -->
 
 ---
+layout: image-right-bottom
+image: assets/Textur_Fliesen_rosa-gelb.jpg
+---
 
 # Agenda
 
@@ -31,7 +34,7 @@ Neckarsulm | 26.09.2022 | Bechtle AG
 <br>
 
 ### Vorgehen
-- Ermittlung der Lösungsstrategien
+- Lösungsstrategie
 - Nutzwertanalyse
 
 <br>
@@ -43,7 +46,7 @@ Neckarsulm | 26.09.2022 | Bechtle AG
 <!--
 Problemstellung
 - Was ist AFI Invoice
-- Welche Probleme gibt es mit AFI Invoice
+- Welche Probleme
 
 Vorgehen
 - Finden einer Lösungsstrategie
@@ -57,7 +60,7 @@ Ergebnisse
 
 ---
 layout: image-right
-image: assets/bechtle.jpg
+image: assets/170531_nhm_bec_3326.jpg
 ---
 
 # Rechnungsverarbeitung
@@ -73,15 +76,10 @@ flowchart TD
 ```
 </div>
 
-<!--
-- Bechtle ist ein IT-Handelsunternehmen
-- Verkauf von Produkten an Kunden
-- senden Rechnungen
--->
 
 ---
 layout: image-right
-image: assets/bechtle.jpg
+image: assets/170531_nhm_bec_3326.jpg
 ---
 
 # Rechnungsverarbeitung
@@ -100,14 +98,63 @@ flowchart TD
 </div>
 
 <!--
-- Bechtle bezieht Produkte von Lieferanten
-→ Eingangsrechnungen
 - Projektarbeit thematisiert nur Eingangsrechnungen
+- 32 E-Mail-Postfächer für Empfang von Rechnungen in Form einer PDF als Anhang einer E-Mail
+- Software zur Verarbeitung
 -->
 
 ---
+layout: two-cols
+---
+
+# Rechnungsverarbeitung
+
+Funktionsweise von AFI Invoice
+
+<br>
+
+<Inbox name="Posteingang - Bechtle Deutschland" mt-1 />
+
+::right::
+<div class="w-full h-full pl-12 flex flex-col gap-8">
+  <Invoice />
+  <Sap />
+</div>
+
+
+---
 layout: image-right
-image: 'https://inbox-monitor.cfapps.eu20.hana.ondemand.com/'
+image: assets/170530_nhm_bec_1932.jpg
+---
+
+# Lösungsstrategien
+
+zur Vermeidung eines Zahlungsverzuges
+
+<br>
+
+- Manuelle Überprüfung
+- Lösung der Probleme
+- Monitoring von AFI Invoice
+
+<!--
+zeitintensiv / nicht so verlässlich wie automatische Lösung
+
+AFI Solutions
+- Problem bekannt
+- Maßnahmen zur Vermeidung des Problems
+- Problem kann nicht gänzlich ausgeschlossen werden
+-->
+
+---
+layout: iframe
+url: 'https://inbox-monitor-test.cfapps.eu20.hana.ondemand.com/'
+scale: 0.82
+---
+
+---
+layout: image-right
+image: ../assets/170531_nhm_bec_3609.jpg
 ---
 
 # Rechnungsverarbeitung
@@ -119,87 +166,10 @@ AFI Invoice verarbeitet Eingangsrechnungen
 ```mermaid
 %%{init: {'theme':'forest'}}%%
 flowchart TD
-    A[1.800 E-Mails / Tag\nmit PDF-Anhang] --> |gesendet an| B
+    A[2.000 E-Mails / Tag\nmit PDF-Anhang] --> |gesendet an| B
     B[32 Exchange Postfächer] --> |verarbeitet von| C[3 AFI Invoice Instanzen\nauf Windows Servern]
 ```
 
----
-layout: two-cols
----
-# Rechnungsverarbeitung
-
-Funktionsweise von AFI Invoice
-
-<br>
-
-<Inbox name="Posteingang - Bechtle Deutschland" />
-
-::right::
-<div class="w-full h-full pl-12 flex flex-col gap-8">
-  <Invoice />
-  <Sap />
-</div>
-
----
-layout: iframe
-url: 'https://inbox-monitor.cfapps.eu20.hana.ondemand.com/'
----
-
-# Rechnungsverarbeitung
-
-Funktionsweise von AFI Invoice
-
-<br>
-<br>
-
-<Inbox>
-
-</Inbox>
-
----
-
-# Navigation
-
-Hover on the bottom-left corner to see the navigation's controls panel
-
-### Keyboard Shortcuts
-
-|     |     |
-| --- | --- |
-| <kbd>space</kbd> / <kbd>tab</kbd> / <kbd>right</kbd> | next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
-
----
-layout: image-right
-image: 'https://source.unsplash.com/collection/94734566/1920x1080'
----
-
-# Code
-
-Use code snippets and get the highlighting directly!
-
-```ts
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
-
-function updateUser(id: number, update: Partial<User>) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
-```
-
----
-layout: center
-class: "text-center"
----
-
-# Learn More
-
-[Documentations](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
+<!--
+- Deutschland, Österreich/Schweiz, Europa
+-->

@@ -17,9 +17,7 @@ defineProps({
       <button class="i-fa6-solid-rotate text-bechtle-zukunftsblau" @click="addEmail" />
       {{ name }}
     </div>
-    <template v-for="email in emails">
-      <Email :id="email.id" :sender="email.sender" :subject="email.subject" :date="email.date" :message="email.message" :attachments="email.attachments" />
-    </template>
+    <Email v-for="email in emails" :id="email.id" :sender="email.sender" :subject="email.subject" :date="email.date" :message="email.message" :attachments="email.attachments" />
   </div>
 </template>
 

@@ -48,7 +48,7 @@ export const useInbox = defineStore('inbox', () => {
   })
 
   function addEmail() {
-    const randomSupplier = suppliers[Math.floor(Math.random() * suppliers.length)]
+    const randomSupplier = suppliers[id % suppliers.length]
     const randomNumberOfProducts = Math.floor(Math.random() * 2) + 2
     const randomProducts = new Map<string, { price: number, amount: number }>()
 

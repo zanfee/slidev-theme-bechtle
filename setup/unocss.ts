@@ -9,6 +9,9 @@ export default defineUnoSetup(() => ({
     transformerDirectives(),
     transformerVariantGroup(),
   ],
+  rules: [
+    ['bg-bottom', { 'background-position': 'bottom' }],
+  ],
   theme: {
     colors: {
       bechtle: {
