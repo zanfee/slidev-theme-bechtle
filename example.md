@@ -16,6 +16,11 @@ Neckarsulm | 26.09.2022 | Bechtle AG
 - Projektarbeit Titel 
 "Evaluation und prototypische Implementierung einer Lösung zum Monitoring der automatischen Rechnungsverarbeitung mittels AFI Invoice"
 - Entwicklung einer Überwachungssoftware
+
+,,
+
+- einige mit AFI Invoice vertraut, Ergebnis gesehen
+- Fragen stellen, später mitmachen
 -->
 
 ---
@@ -98,8 +103,9 @@ flowchart TD
 </div>
 
 <!--
-- Projektarbeit thematisiert nur Eingangsrechnungen
-- 32 E-Mail-Postfächer für Empfang von Rechnungen in Form einer PDF als Anhang einer E-Mail
+- empfangen, überprüfen, um fristgerecht bezahlen
+- Rechnungen werden in Form einer PDF-Datei ausgestellt
+- 32 E-Mail-Postfächer, um diese als Anhang einer E-Mail zu empfangen
 - Software zur Verarbeitung
 -->
 
@@ -121,6 +127,11 @@ Funktionsweise von AFI Invoice
   <Sap />
 </div>
 
+<!--
+- beschreiben: E-Mail mit PDF
+- PDF → übertragen
+- SAP, Bestellung getätigt, Rechnungsnummer
+-->
 
 ---
 layout: image-right
@@ -129,21 +140,60 @@ image: /assets/170530_nhm_bec_1932.jpg
 
 # Lösungsstrategien
 
-zur Vermeidung eines Zahlungsverzuges
+zur Vermeidung von Zahlungsverzügen
 
 <br>
 
-- Manuelle Überprüfung
+- manuelle Überprüfung
 - Lösung der Probleme
 - Monitoring von AFI Invoice
 
 <!--
 zeitintensiv / nicht so verlässlich wie automatische Lösung
 
-AFI Solutions
-- Problem bekannt
+#### AFI Solutions
+- Problem bestätigt
+- mögliche Ursachen genannt
 - Maßnahmen zur Vermeidung des Problems
 - Problem kann nicht gänzlich ausgeschlossen werden
+
+#### Monitoring
+- mehrere Ansätze verglichen
+- Abfrage über Schnittstelle
+- ← Graph API
+- praktische Anwendung zeigt Eignung
+
+,,
+
+(falsch codierte, zu große E-Mails, Java-Crashes, Windows Updates → Wartungsvertrag / proaktives Monitoring)
+-->
+
+---
+layout: image-right
+image: /assets/technologies.png
+---
+
+# Nutzwertanalyse
+
+Implementierung
+
+<br>
+
+#### Komponentent der Anwendung
+
+- Datenquelle
+- Benachrichtigungssytem
+- Benutzeroberfläche
+
+<br>
+
+#### Technologien
+
+- Nuxt.js 3
+- Microsoft Power Automate
+
+<!--
+-
 -->
 
 ---
