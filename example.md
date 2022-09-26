@@ -175,7 +175,7 @@ image: /assets/technologies.png
 
 # Nutzwertanalyse
 
-Implementierung
+Technologien zur Implementierung
 
 <br>
 
