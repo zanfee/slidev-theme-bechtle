@@ -177,7 +177,7 @@ image: /assets/technologies.png
 
 <br>
 
-#### Komponentent der Anwendung
+#### Komponenten der Anwendung
 
 - Datenquelle
 - Benachrichtigungssytem
@@ -221,6 +221,10 @@ flowchart TD
 <!--
 - Deutschland, Österreich/Schweiz, Europa
 -->
+
+---
+
+<img src="public/assets/qualitätskriterien.png" alt="Qualitätskriterien" class="h-120" />
 
 ---
 
