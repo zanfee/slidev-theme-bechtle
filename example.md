@@ -224,7 +224,7 @@ flowchart TD
 
 ---
 
-<img src="public/assets/qualitätskriterien.png" alt="Qualitätskriterien" class="h-120" />
+<Image src="/assets/qualitätskriterien.png" alt="Qualitätskriterien" h-120 />
 
 ---
 
