@@ -9,7 +9,7 @@ css: unocss
 
 Eine Projektarbeit von Jan Fröhlich
 
-Neckarsulm | 26.09.2022 | Bechtle AG
+Mosbach | 28.09.2022 | Bechtle AG
 
 <!--
 - Name, Firma
