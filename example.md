@@ -46,7 +46,7 @@ image: /assets/Textur_Fliesen_rosa-gelb.jpg
 
 ### Ergebnisse
 - Erkenntnisse
-- Produkt
+- Vorstellung der Anwendung
 
 <!--
 Problemstellung
@@ -140,7 +140,7 @@ image: /assets/170530_nhm_bec_1932.jpg
 
 # Lösungsstrategien
 
-zur Vermeidung von Zahlungsverzügen
+zur Erkennung der Ausfälle
 
 <br>
 
@@ -173,9 +173,7 @@ layout: image-right
 image: /assets/technologies.png
 ---
 
-# Nutzwertanalyse
-
-Technologien zur Implementierung
+# Konzeption
 
 <br>
 
@@ -187,7 +185,7 @@ Technologien zur Implementierung
 
 <br>
 
-#### Technologien
+#### Nutzwertanalyse
 
 - Nuxt.js 3
 - Microsoft Power Automate
