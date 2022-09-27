@@ -68,7 +68,6 @@ export const useInbox = defineStore('inbox', () => {
   }
 
   function select(id: number) {
-    console.log('select', id)
     if (emails.value.find((email) => email.id === id))
       selected.value = id
     else {
